@@ -1,0 +1,44 @@
+{
+    "name": "laraket/simples",
+    "description": "A simple es client for laravel project",
+    "keywords": ["laravel", "package", "es"],
+    "license": "MIT",
+    "require": {
+        "elasticsearch/elasticsearch": "^5.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "orchestra/testbench": "^3.7",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Laraket\\Simples\\": "src/"
+      }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laraket\\Simples\\Tests\\": "tests/"
+        },
+        "classmap": [
+            "tests/factories"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laraket\\Simples\\SimplesServiceProvider"
+            ]
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://php.cnpkg.org"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true
+}
